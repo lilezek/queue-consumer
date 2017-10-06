@@ -1,0 +1,33 @@
+{
+  "name": "consumer",
+  "version": "0.0.1",
+  "description": "Consumer service for WebSocket queues",
+  "main": "bin/app.js",
+  "scripts": {
+    "test": "TS_NODE_PROJECT=tests mocha --compilers ts:ts-node/register tests/",
+    "build": "tsc",
+    "start": "node bin/app.js"
+  },
+  "keywords": [
+    "consumer",
+    "websocket",
+    "websocketqueue"
+  ],
+  "author": "Ezequiel Santamaría Navarro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "express-ws": "^3.0.0",
+    "queue-protocol": "git+https://github.com/lilezek/websocket-queue.git",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/express": "^4.0.37",
+    "@types/mocha": "^2.2.43",
+    "@types/ws": "^3.2.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.0",
+    "typescript": "^2.5.3"
+  }
+}
